@@ -1,0 +1,10 @@
+딥러닝 기초 (Deep Learning)
+    - 선형 회귀 (Linear Regression): 입력변수(X)의 선형결합으로 출력변수(Y)를 표현. Y는 연속형 변수.
+    - 로지스틱 회귀: 입력변수(X)의 비선형결합으로 범주형 출력변수(Y)를 표현.
+    - 인공 신경망 파라미터:
+    - 파라미터: 가중치 (wz)
+        - 하이퍼파라미터: hidden layer, hidden node, activation function
+        - 비용함수 (Cost Function): 예측값 Y와 실제값 Y의 차이를 최소로 하는 함수.
+    - 역전파 (Backpropagation): 다층 퍼셉트론 학습에 사용되는 통계적 기법. 오차를 역으로 전파하여 가중치를 갱신.
+    - 경사하강법 (Gradient Descent): 손실함수의 기울기(=가중치의 편미분)에 학습률(learning rate)을 반영하여 가중치를 갱신.
+    - XOR 문제 해결 예시: XOR 연산을 수행하는 인공 신경망의 예제를 제공. 학습 과정에서 가중치를 갱신하는 과정을 보여준다.

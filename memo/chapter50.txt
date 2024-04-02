@@ -1,0 +1,20 @@
+자연어 처리의 전반적 개요
+    - 자연어 처리(NLP): 기계가 인간의 언어를 이해하고 소통하는 기술.
+    - 통계기반 자연어 처리 절차: 데이터 수집, 정제, 토큰화, 품사 부착, 원형 복원, 불용어 처리, 주제어 찾기, 문서 요약, 분류 및 감성 분석 등.
+단어 및 문서의 표현
+    - 단어 표현: 원핫 인코딩, TF-IDF, LSA, Word2Vec, GloVe, FastText.
+    - 문서 표현: TF-IDF, LSA, Sent2Vec, Doc2Vec.
+문맥적 단어 임베딩
+    - 발전: RNN, LSTM/GRU, CNN, Seq2Seq, Seq2Seq with Attention, Transformer, BERT.
+    - 모델별 특징과 장점:
+        - RNN, LSTM/GRU: 시계열 데이터 고려, 장기 의존성 해결.
+        - CNN: 이미지 분류에 주로 사용, 시계열에 대한 고려 부족.
+        - Seq2Seq: Encoder-Decoder 구조, Many to Many.
+        - Seq2Seq with Attention: Attention 기반 집중.
+        - Transformer: LSTM 없이 Attention만 사용.
+        - BERT: Masked Language Model, Next Sentence Prediction.
+각 모델의 주요 활용 방법
+    - RNN, LSTM/GRU: 이미지 캡셔닝, 기계 번역, 감정 분류 등.
+    - CNN: 단어 표현 및 합성곱, 풀링 층을 통한 특징 추출.
+    - Seq2Seq: 인코더와 디코더를 사용한 단어 임베딩.
+    - Transformer와 BERT: 전체 문맥 고려, 사전 훈련된 언어 모델 사용.

@@ -1,0 +1,13 @@
+Seq2Seq 모델의 Attention Mechanism
+    - 문제점: 기존 Seq2Seq 모델에서는 입력 시퀀스의 길이와 상관없이 단일 컨텍스트 벡터를 사용, 정보 병목 현상 발생.
+    - Attention Mechanism 도입:
+        - 인코더에서 디코더로 예측 시에 인코더에서의 집중할 정보를 더 고려하여 예측.
+        - 디코더에서 각 시간 단계마다 인코더의 출력에 대한 가중치(Attention)를 계산하여 예측에 활용.
+Attention Mechanism의 구조
+    - 어텐션 분포(Attention Distribution): 인코더 출력에 대한 가중치 분포를 계산.
+    - 어텐션 스코어(Attention Score): 인코더의 각 출력과 디코더의 현재 상태 사이의 유사도 점수.
+    - 컨텍스트 벡터(Context Vector): 어텐션 스코어를 사용하여 인코더 출력의 가중 평균을 계산.
+    - 어텐션 벡터(Attention Vector): 컨텍스트 벡터와 디코더의 현재 상태를 결합하여 예측.
+Attention Mechanism의 작동 방식
+    - Seq2Seq 모델이 디코딩 과정에서 인코더의 출력 중 어느 부분에 주목해야 할지 결정합니다.
+    - 이는 특히 기계 번역과 같은 작업에서 중요하며, 문맥상 관련성이 높은 부분에 집중하여 더 정확한 번역이 가능하게 함.

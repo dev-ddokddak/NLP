@@ -1,0 +1,13 @@
+CNN (Convolutional Neural Network)의 자연어처리 적용
+    - 개념: CNN은 이미지 처리에 주로 사용되지만, 자연어 처리(NLP)에도 효과적으로 적용될 수 있다.
+    - 주요 활용: 문장 분류, 의미론적 분석, 감성 분석 등 다양한 텍스트 처리 작업.
+CNN for Sentence Classification
+    - 구조 및 작동 방식:
+        - Convolution Layer: 다양한 크기의 필터(feature map)를 사용하여 문장을 통과.
+        - Max Pooling: 각 특징 맵에서 가장 중요한 정보를 추출.
+        - Concatenation: Max Pooling의 결과를 결합하여 최종 벡터를 생성.
+CNN의 장점 및 한계
+    - 장점: 지역적 특성을 포착하며, 병렬 처리에 적합하고, 계산 효율성이 높다.
+    - 한계: 순차적 정보나 장기 의존성을 포착하는 데는 RNN이나 LSTM보다 덜 효과적일 수 있다.
+기타 정보
+    - 이 강의 자료는 여러 학술 자료와 웹 사이트를 참조하며, CNN이 자연어 처리에서 어떻게 적용되고 활용될 수 있는지를 설명.

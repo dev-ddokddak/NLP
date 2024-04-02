@@ -1,0 +1,14 @@
+Transformer 모델 개요
+    - Transformer: RNN이나 CNN을 사용하지 않고 오직 Attention 메커니즘만을 사용하는 구조.
+    - 주요 기능: 긴 거리의 의존성 문제를 해결하고, 연산의 병렬화를 가능하게 함.
+    - 문맥적 단어 임베딩: BERT, ELMo와 같은 모델들에 영향을 미침.
+Transformer의 구조
+    - Multi-Head Attention: 다중 헤드 어텐션을 통해 다양한 관점에서 입력 데이터를 처리.
+    - Positional Encoding: 문장 내 각 단어의 위치 정보를 부여하여 시퀀스 데이터의 순서를 반영.
+    - Encoder-Decoder 구조: 6개의 인코더와 6개의 디코더 레이어로 구성됨.
+Transformer의 작동 원리
+    - Self-Attention: 입력 시퀀스 내에서의 단어 간 관계 파악.
+    - Scaled Dot-Product Attention: Attention 스코어 계산과정에서 내적을 사용하고, 차원의 크기로 나눠 스케일 조정.
+학습 및 예측 과정
+    - Label Smoothing: 모델이 과도하게 확신하는 것을 방지하고 일반화 성능 향상.
+    - Transformer의 학습: 초기 단계에서는 학습률을 높였다가 점차 감소시키는 스케줄링 적용.

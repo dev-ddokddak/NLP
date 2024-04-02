@@ -1,0 +1,19 @@
+Word2Vec 직접 구현 (Continuous Bag of Words, CBoW)
+    - 학습 구조:
+        - 문장 토큰화, 불필요한 품사 제거.
+        - 가중치(파라미터, 단어 벡터) 초기화.
+        - 원-핫 인코딩으로 단어 표현.
+        - Epoch만큼 반복 학습.
+    - 학습 절차:
+        - 중심 단어와 문맥 단어 추출.
+        - Feed Forward: 입력층에서 출력층으로 데이터 흐름.
+        - Loss 및 Gradient 계산.
+        - Weight (파라미터) 업데이트.
+    - Feed Forward:
+        - Hidden Layer 계산: 입력 단어(원-핫 벡터)와 단어 벡터의 곱.
+        - Output Layer 계산: Hidden Layer와 단어 벡터의 곱, softmax 활용.
+    - 단어 간 유사도 계산:
+        - 선택된 단어 벡터(H)와 전체 단어 벡터 간의 유사도 측정.
+    - Loss/Gradient 계산 및 Weight 갱신:
+        - 각 Epoch에서의 Loss 계산.
+        - Gradient와 학습률을 이용한 파라미터 업데이트.

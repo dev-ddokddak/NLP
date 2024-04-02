@@ -1,0 +1,14 @@
+BERT (Bidirectional Encoder Representations from Transformers)
+    - BERT 개념: BERT는 문맥적 단어 임베딩을 위해 Deep Bidirectional Transformers를 사전 훈련한 모델.
+    - 핵심 특징:
+        - 양방향 Transformers 모델: 텍스트 전체를 고려하여 각 단어의 문맥을 파악.
+        - Pre-trained + Fine tuning 모델: 다양한 NLP 작업에 적용 가능한 범용성을 지닌다.
+        - Masked Language Model (MLM): 일부 단어를 마스킹하고 예측.
+        - Next Sentence Prediction (NSP): 두 문장이 실제로 연속하는지 판별.
+BERT의 구조 및 응용
+    - Wordpiece Tokenizer 사용: 단어를 subword로 나누어 처리.
+    - 모델 구성요소: Token Embedding, Segment Embedding, Position Embedding.
+    - 응용 예시: 텍스트 분류, 개체명 인식, 질문 답변 등 다양한 NLP 작업에 활용.
+BERT의 Fine-Tuning 절차
+    - Transfer Learning: BERT를 특정 작업에 맞게 세부 조정.
+    - Fine-Tuning 과정: 사전 훈련된 모델의 파라미터를 특정 작업에 최적화.

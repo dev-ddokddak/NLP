@@ -1,0 +1,19 @@
+문맥적 단어 임베딩 (Contextualized Word Embedding)
+    - 기본 개념: 문맥에 따라 단어의 벡터를 생성하는 기법. 같은 단어도 문맥에 따라 다른 벡터가 생성될 수 있다.
+    - 대표 모델: ELMo, BERT, OpenAI GPT와 같은 모델들이 있으며, 이들은 같은 단어라도 문맥에 따라 다르게 표현.
+Word2Vec 대비 문맥적 임베딩
+    - Word2Vec: 단어 단위의 원-핫 인코딩 벡터와 W^t 곱해져서 Word Vector를 생성.
+    - Contextualized Word Representation: 문장을 입력 받아 각 단어에 대한 표현을 산출. 문맥에 의존적인 단어의 의미를 포착.
+문맥적 단어 임베딩의 장점
+    - 문맥 고려: 문장 단위의 입력을 받아 단어의 문맥에 따라 다른 표현을 생성.
+    - 문맥적 특징 산출: 다계층 구조로 문맥에 의존적인 단어의 의미 포착.
+처리 과정
+    - 토큰화: 문장 및 단어 토큰화.
+    - PoS 태깅: 품사 부착.
+    - 원형 복원: Stemming, Lemmatization.
+    - 불용어 처리: 불용어 및 불용 품사 제거.
+    - 단어 및 문서 표현: Word2Vec, GloVe, FastText, BoW, TDM, TCM 등 다양한 방식 적용 가능.
+문맥적 단어 임베딩의 발전
+    - ElMo: 양방향 언어 모델(biLM)을 기반으로 하여 Bidirectional Stacking 사용.
+    - BERT: Wordpiece tokenizer, Masked Language Model(MLM), Next Sentence Prediction(NSP), Position Embedding을 사용한 Pre-trained 모델로, Fine Tuning 가능.
+    - Transformer: LSTM 제거, Self-attention 및 Multihead attention 사용, Positional Encoding 적용.

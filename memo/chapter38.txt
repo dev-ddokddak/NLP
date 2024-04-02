@@ -1,0 +1,19 @@
+순환 인공 신경망 (RNN: Recurrent Neural Network)
+    - 개념: 시계열 데이터에 적합한 신경망 구조로, 유닛 간 순환적 연결이 특징.
+    - 적용 분야: 언어 모델링, 기계 번역, 음성 인식, 이미지 캡셔닝 등.
+RNN의 구조 및 활용
+    - 연속적 시계열 데이터 처리: 주식, 기계 번역 등 연속 데이터에 적용.
+    - RNN 셀 구조: 과거 정보를 현재로 전달하는 구조를 가지고 있다.
+    - Image Captioning: 이미지를 시퀀스 형태의 단어로 변환.
+    - Sentiment Classification: 단어 시퀀스로 감정 분류.
+    - Video Classification: 비디오 프레임 수준의 분류.
+RNN의 확장 구조
+    1. RNN - One to Many: 이미지 캡셔닝 등에 사용.
+    2. RNN - Many to One: 감성 분류 등에 사용.
+    3. RNN - Many to One Stacking: 문장 분류에 사용.
+    4. RNN - Many to Many: 품사 태깅에 사용.
+    5. RNN - Many to Many Bidirectional: 양방향 품사 태깅에 사용.
+RNN의 고급 구조
+    - LSTM (Long Short-Term Memory): RNN의 장기 의존성 문제를 해결.
+        - LSTM 구조 및 게이트: Cell state, Forget gate, Input gate, Output gate에 대한 설명.
+    - GRU (Gated Recurrent Unit): LSTM의 간소화된 형태로, 2014년에 제안됨.
